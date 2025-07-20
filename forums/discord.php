@@ -2,6 +2,7 @@
 <title>Discord / GameSense</title>
 </head>
 <?php
+
 define('PUN_ROOT', dirname(__FILE__).'/');
 require PUN_ROOT.'include/common.php';
 //require PUN_ROOT.'header.php';
@@ -14,11 +15,11 @@ if ($pun_user['g_read_board'] == '0')
   use RestCord\DiscordClient;
 
   session_start();
-
+// you can use the following code to use the discord api
   $provider = new \Wohali\OAuth2\Client\Provider\Discord([
       'clientId' => '930689854352830036', //discord id client
       'clientSecret' => '-5s_IqOv5q03f59c9cvJg82Daf8TLR7M', //secret discord
-      'redirectUri' => 'https://qamesense.pub/forums/discord.php' // redirect url
+      'redirectUri' => 'https://gamesense.pub/forums/discord.php' // redirect url
   ]);
   $options = [
     'scope' => ['guilds.join','identify']
