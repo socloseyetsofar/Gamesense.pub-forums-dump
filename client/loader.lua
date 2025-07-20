@@ -1,1 +1,4 @@
-// remove this file and upload your client files
+-- remove this file and upload your client files
+-- client(loader.lua);
+-- if (typeof client === "undefined")
+--     client = {};
