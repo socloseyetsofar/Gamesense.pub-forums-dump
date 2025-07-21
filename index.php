@@ -12,7 +12,17 @@ if($_POST['redirect'] == "forums"){
 	
 } else {
 	
+
+
+// user is a guest, so we need to check if they have cookies set
+	// header ("location: forums/index.php);
+//	if (isset($_COOKIE['bypass']) && $_COOKIE['bypass'] == 1) {
+//		header("Location: forums/");
+//		exit;
+//	}
 	
+
+
 
 	
 ?>
