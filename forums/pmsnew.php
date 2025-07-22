@@ -33,7 +33,8 @@ if ($pun_user['is_guest'])
 if ($pun_config['o_pms_enabled'] != '1' || ($pun_user['g_pm'] == 0 && $pun_user['messages_new'] == 0))
 	message($lang_common['No permission'], false, '403 Forbidden');
 
-// если была отправка формы
+
+// echo csrf_hash does not work in php 5.2
 if (isset($_POST['csrf_hash']) || isset($_GET['csrf_hash']))
 {
 	confirm_referrer('pmsnew.php');
