@@ -89,7 +89,8 @@ $tpl_main = str_replace('<pun_language>', $lang_common['lang_identifier'], $tpl_
 $tpl_main = str_replace('<pun_content_direction>', $lang_common['lang_direction'], $tpl_main);
 // END SUBST - <pun_content_direction>
 
-
+// star pun_colorize_groups
+//$pun_colorize_groups = array();
 // START SUBST - <pun_head>
 ob_start();
 
